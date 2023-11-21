@@ -1,12 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - ShaneGaymon28
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - ShaneGaymon28/sudoku_solver
+  - ShaneGaymon28/Pizzeria-Management-System
+  - ShaneGaymon28/Good-Driver-Incentive-Program
+  - ShaneGaymon28/Web-Application-Programming
+  - ShaneGaymon28/Algorithm-Visualizer-using-Java-Swing
+  - ShaneGaymon28/Conways-GameOfLife-Simulator-using-Java-Swing

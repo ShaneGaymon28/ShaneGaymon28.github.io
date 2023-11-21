@@ -77,11 +77,7 @@
   "publications": [],
   "skills": [
     {
-      "name": "SQL",
-      "keywords": [
-        "SQL Server", 
-        "MySQL"
-      ]
+      "name": "SQL"
     },
     {
       "name": "Java"
@@ -109,7 +105,7 @@
     {
       "name": "Good Driver Incentive Program",
       "date": "December 2022",
-      "url": "",
+      "url": "https://github.com/ShaneGaymon28/Good-Driver-Incentive-Program",
       "summary": "As part of a semester long group project, I was able to participate in a mock iteration of the software development lifecycle using Agile processes. We analyzed, designed, and deployed a full stack web application using Microsoft's .NET and C#. The focus of the project required us to enable mock companies to reward commercial truck through a cloud based portal. ... " ,
       "highlights": [
         ""
@@ -118,7 +114,7 @@
     {
       "name": "Pizzeria Management System",
       "date": "April 2023",
-      "url": "",
+      "url": "https://github.com/ShaneGaymon28/Pizzeria-Management-System",
       "summary": "For this project, I designed and implemented a MySQL database to track the day-to-day operations of a mock pizzeria. Alongside the database, I developed a Java application to allow users to interact with the database using a command line interface. ...",
       "highlights": [
         ""

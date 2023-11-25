@@ -1,7 +1,7 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
+title: Algorithm Visualizer
+description: an algorithm visualizer project using Java and Java Swing
 img: assets/img/1.jpg
 importance: 3
 category: fun

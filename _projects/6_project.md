@@ -1,7 +1,7 @@
 ---
 layout: page
-title: project 6
-description: a project with no image
+title: Conway's Game of Life Simulator
+description: a Conway's game of life simulator using Java and Java Swing
 img:
 importance: 4
 category: fun

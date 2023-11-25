@@ -8,7 +8,7 @@ category: school
 related_publications: einstein1956investigations, einstein1950meaning
 ---
 
-<a href="https://github.com/ShaneGaymon28/Pizzeria-Management-System">Link to this Github Repository</a>
+<a href="https://github.com/ShaneGaymon28/Pizzeria-Management-System">Link to this Github repository</a>
 
 
 This project was done as part of my Database Management Systems class at Clemson University. This project included 3 parts:

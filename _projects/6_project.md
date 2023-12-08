@@ -5,6 +5,10 @@ description: a Conway's game of life simulator using Java and Java Swing
 img:
 importance: 4
 category: fun
+github: https://github.com/ShaneGaymon28/Conways-GameOfLife-Simulator-using-Java-Swing
+nav: true
+toc:
+    sidebar: left
 ---
 
 Every project has a beautiful feature showcase page.

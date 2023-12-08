@@ -14,6 +14,42 @@ toc:
 
 <a href="https://github.com/ShaneGaymon28/Good-Driver-Incentive-Program">Link to this repository</a>
 
+<div class="row justify-content-center">
+    <h4><strong><u>Tech Stack</u></strong></h4>
+</div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <div class="caption">
+            <strong>.NET MVC</strong>
+        </div>
+        {% include figure.html path="assets/img/logos/dotnetLogo.png" title=".NET" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <div class="caption">
+            <strong>MySQL</strong>
+        </div>
+        {% include figure.html path="assets/img/logos/mysqlLogo.png" title="MySQL" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <div class="caption">
+            <strong>C#</strong>
+        </div>
+        {% include figure.html path="assets/img/logos/csharpLogo.jpeg" title="C#" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <div class="caption">
+            <strong>Entity Framework Core</strong>
+        </div>
+        {% include figure.html path="assets/img/logos/efcoreLogo.png" title="EF Core" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <div class="caption">
+            <strong>AWS Elastic Beanstalk</strong>
+        </div>
+        {% include figure.html path="assets/img/logos/awsbeanstalkLogo.png" title="AWS Elastic Beanstalk" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
 
 <h4><strong><u>Introduction</u></strong></h4>
 This project was completed as part of my senior software design class at Clemson University. The aim of the class 

@@ -5,6 +5,10 @@ description: Web application projects
 img: assets/img/7.jpg
 importance: 3
 category: school
+github: https://github.com/ShaneGaymon28/Web-Application-Programming
+nav: true
+toc:
+    sidebar: left
 ---
 
 Every project has a beautiful feature showcase page.

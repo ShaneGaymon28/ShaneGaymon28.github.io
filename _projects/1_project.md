@@ -13,6 +13,31 @@ toc:
 
 <a href="https://github.com/ShaneGaymon28/Pizzeria-Management-System">Link to this Github repository</a>
 
+<div class="row justify-content-center">
+    <h4><strong><u>Tech Stack</u></strong></h4>
+</div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <div class="caption">
+            <strong>Java</strong>
+        </div>
+        {% include figure.html path="assets/img/logos/javaLogo.png" title="Java" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <div class="caption">
+            <strong>MySQL</strong>
+        </div>
+        {% include figure.html path="assets/img/logos/mysqlLogo.png" title="MySQL" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <div class="caption">
+            <strong>AWS RDS</strong>
+        </div>
+        {% include figure.html path="assets/img/logos/rdsLogo.png" title="AWS RDS" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+
 
 This project was done as part of my Database Management Systems class at Clemson University. This project included 3 parts:
 <ul>
@@ -239,6 +264,8 @@ public class Customer
 }
 ```
 {% endraw %}
+
+In addition to creating the Java application, we were asked to host the database in the cloud using Amazon Web Service's Relational Database Service (RDS).
 
 
 <h4><strong><u>How to Run (IntelliJ)</u></strong></h4>

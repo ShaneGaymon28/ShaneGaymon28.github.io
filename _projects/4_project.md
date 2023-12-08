@@ -5,9 +5,27 @@ description: a sudoku solving game using Python and Pygame
 img: assets/img/sudoku_img.png
 importance: 3
 category: fun
+github: https://github.com/ShaneGaymon28/sudoku_solver
+nav: true
+toc:
+    sidebar: left
 ---
 
 <a href="https://github.com/ShaneGaymon28/sudoku_solver">Link to this Github repository</a>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <h4><strong><u>Tech Stack</u></strong></h4>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-sm mt-3 mt-md-0">
+            <div><strong>Python</strong></div>
+            <div class="mt-3">
+                {% include figure.html path="assets/img/logos/pythonLogo.png" title="Python" class="img-fluid rounded z-depth-1" %}
+            </div>
+        </div>
+    </div>
+</div>
 
 This project is a sudoku solver game that was implemented using Python and Pygame.
 
@@ -32,7 +50,7 @@ The game supports the following features:
     A screenshot of the sudoku solver
 </div>
 
-<h4>Files</h4>
+<h4><strong><u>Files</u></strong></h4>
 <ul>
     <li>GUI.py</li>
     <li>Cube.py</li>
@@ -91,7 +109,8 @@ the border around squares when the backtracking algorithm is called to solve the
 This file contains a class that handles generating a new, unique, and solvable puzzle. It handles the generation of new game boards by first generating a valid, completely filled 
 board then removing random values off that board. The difficulty modifier in the GUI controls how many random values will be removed from the board (easy difficulty removes less and a harder difficulty removes more values). While removing values from the board, the algorithm does a check after each to ensure that the board is still solvable with the given starting values. The resulting board is a 9x9 2D array with 0 representing empty squares and non-zero values representing given squares.
 
-<h4>How to Run the Game</h4>
+
+<h4><strong><u>How to Run the Game</u></strong></h4>
 Once you have downloaded the files and have them in the same directory, you can run the game by typing the following command: 
 {% raw %}
 ```python
@@ -99,11 +118,13 @@ python3 GUI.py
 ```
 {% endraw %}
 
-<h4>How to Play</h4>
+
+<h4><strong><u>How to Play</u></strong></h4>
 If you are unfamiliar with the rules of sudoku, here is a link to <a href="https://masteringsudoku.com/sudoku-rules-beginners/">sudoku instructions</a>. Upon running the program for the first time, the game automatically generates a board (at normal difficulty) and starts the game. Clicking on an empty square will highlight it RED. Typing a number value in a selected square will place/sketch a TEMPORARY value for that square. Pressing RETURN on sketched square will attempt to add the temporary value in the square (NOTE: if the entered number is not part of the solution, it will not be added and you will gain a strike). Pressing the DELETE key on a sketched square will remove the value. If you select a square and press the SPACE BAR, the computer will begin attempting to solve the puzzle.
 
 
-<h4>Menu Options</h4>
+
+<h4><strong><u>Menu Options</u></strong></h4>
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
         <ul>
@@ -120,7 +141,7 @@ If you are unfamiliar with the rules of sudoku, here is a link to <a href="https
 </div>
 
 
-<h4>How it Works</h4>
+<h4><strong><u>Methodology</u></strong></h4>
 <h6>GUI.py</h6>
 When you first run the program, a main function is called and begins to run. This function creates the pygame window (with options), initializes the Grid class, and starts a while loop to capture user input events. Here's a list of the different events I'm concerned with receiving from the user:
 <ul>

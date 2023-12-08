@@ -5,6 +5,10 @@ description: an algorithm visualizer project using Java and Java Swing
 img: assets/img/1.jpg
 importance: 3
 category: fun
+github: https://github.com/ShaneGaymon28/Algorithm-Visualizer-using-Java-Swing
+nav: true
+toc:
+    sidebar: left
 ---
 
 Every project has a beautiful feature showcase page.

@@ -21,3 +21,4 @@ In short, I have full-stack web development experience from my undergraduate stu
 
 I'm a lifelong learner (currently working towards a few CompTIA certifications) and love to read, play golf, and enjoy the great outdoors! I'm interested in history and my current favorite book is <a href="https://en.wikipedia.org/wiki/Gates_of_Fire">Gates of Fire by Steven Pressfield</a>, a novel on the Battle of Thermopylae and the 300 Spartans who defended the gateway from the Persian Empire. My favorite shows include HBO's Game of Thrones / House of the Dragon and the Yellowstone series (1883 and 1923 also)!
 
+Please feel free to contact me!

@@ -2,7 +2,7 @@
 layout: page
 title: Pizzeria Management System
 description: a SQL database and Java application
-img: assets/img/12.jpg
+img: assets/img/proj1/pizzeria.jpg
 importance: 1
 category: school
 github: https://github.com/ShaneGaymon28/Pizzeria-Management-System
@@ -111,27 +111,82 @@ we created in part 2 on.
     <strong>Fig. 1 - The ER diagram created in part 1</strong>
 </div>
 
-The above screenshot (Fig. 1) shows the relationships, cardinality, and connectivity between different entities in the database.
+The above screenshot (Fig. 1) shows the relationships, cardinality, and connectivity between different entities in the database. There are a few entities in Fig. 1 that I did not mention in the project requirements section. <mark>BASE_PIZZA</mark> is meant to hold the crust type, size, price, and cost of all different combinations of those fields. <mark>PIZZA_TOPPINGS, DISCOUNT_PIZZA, and DISCOUNT_ORDER</mark> are bridge entities that combine the primary and foreign keys of the entities.
 
-The entities have the following relationships:
-<ul>
-    <li>A pizza can have multiple toppings (1 to many)</li>
-    <li>The same topping can be on multiple pizzas (1 to many)</li>
-    <li>Pizzas belong to orders (many to many)</li>
-    <li>An order can have multiple pizzas (1 to many)</li>
-    <li>Each order must have an order type (1 to 1)</li>
-    <li>A customer can have many orders (1 to many)</li>
-    <li>A pizza or order can have multiple discounts applied to it (1 to many)</li>
-    <li>A discount can be applied to many pizzas or orders (1 to many)</li>
-    <li>Each pizza needs a base pizza (1 to 1)</li>
-</ul>
+The different relationship classifications between entities are as follows:
+<h6><strong>One to many</strong></h6>
+This represents two entities where a single occurrence of the first participant can refer to many occurrences of the second.
 
+<h6><strong>Many to many</strong></h6>
+This represents two entities where many occurrences of the first participant can refer to many different references to the second.
 
-There are a few entities in Fig. 1 that I did not mention in the project requirements section. <mark>BASE_PIZZA</mark> is meant to hold 
-the crust type, size, price, and cost of all different combinations of those fields. <mark>PIZZA_TOPPINGS, DISCOUNT_PIZZA, and DISCOUNT_ORDER</mark>
-are bridge entities that combine the primary and foreign keys of the entities.
+<h6><strong>One to one</strong></h6>
+This represents two entities where a single occurrence of the first participant can only refer to one occurrence of the second. 
 
-
+<div class="container m-5">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Entity 1</th>
+                <th>Connectivity</th>
+                <th>Entity 2</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>PIZZA</td>
+                <td>1:M</td>
+                <td>TOPPINGS</td>
+                <td>A pizza can have multiple toppings</td>
+            </tr>
+            <tr>
+                <td>ORDER</td>
+                <td>1:M</td>
+                <td>PIZZA</td>
+                <td>An order can have multiple pizzas</td>
+            </tr>
+            <tr>
+                <td>PIZZA</td>
+                <td>1:1</td>
+                <td>ORDER</td>
+                <td>Each pizza belongs to one order</td>
+            </tr>
+            <tr>
+                <td>ORDER</td>
+                <td>1:1</td>
+                <td>ORDER_TYPE</td>
+                <td>Each order must have one order type</td>
+            </tr>
+            <tr>
+                <td>CUSTOMER</td>
+                <td>1:M</td>
+                <td>ORDER</td>
+                <td>A customer can have multiple orders</td>
+            </tr>
+            <tr>
+                <td>PIZZA</td>
+                <td>1:M</td>
+                <td>DISCOUNTS</td>
+                <td>A pizza can have multiple discounts applied to it</td>
+            </tr>
+            <tr>
+                <td>ORDER</td>
+                <td>1:M</td>
+                <td>DISCOUNTS</td>
+                <td>An order can have multiple discounts applied to it</td>
+            </tr>
+            <tr>
+                <td>PIZZA</td>
+                <td>1:1</td>
+                <td>BASE_PIZZA</td>
+                <td>Each pizza must have a base pizza</td>
+            </tr>
+        </tbody>
+    </table>  
+</div>
+  
+  
 <h4><strong><u>Part 2 - Database Implementation</u></strong></h4>
 In part 2 of this project, we were asked to create 5 SQL scripts for the database. 
 

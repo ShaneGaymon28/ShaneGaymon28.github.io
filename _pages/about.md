@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Sumter, SC. (803) 464-6995. gaymons@gmail.com. Moto. 
+subtitle: Sumter, SC. (803) 464-6995. gaymons@gmail.com. Motto. 
 
 profile:
   align: right

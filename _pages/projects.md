@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A collection of my school and personal projects
+description: A collection of my school and personal projects, all can be found on my Github.
 nav: true
 nav_order: 2
 display_categories: [school, fun]

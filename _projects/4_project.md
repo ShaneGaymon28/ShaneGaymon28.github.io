@@ -15,7 +15,7 @@ toc:
 
 <div class="container">
     <div class="row justify-content-center">
-        <h4><strong><u>Tech Stack</u></strong></h4>
+        <h4><strong><u>Technologies</u></strong></h4>
     </div>
     <div class="row justify-content-center">
         <div class="col-sm mt-3 mt-md-0">

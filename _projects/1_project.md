@@ -21,19 +21,19 @@ toc:
         <div class="caption">
             <strong>Java</strong>
         </div>
-        {% include figure.html path="assets/img/logos/javaLogo.png" title="Java" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/logos/javaLogo2.png" title="Java" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         <div class="caption">
             <strong>MySQL</strong>
         </div>
-        {% include figure.html path="assets/img/logos/mysqlLogo.png" title="MySQL" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/logos/mysql1.png" title="MySQL" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         <div class="caption">
             <strong>AWS RDS</strong>
         </div>
-        {% include figure.html path="assets/img/logos/rdsLogo.png" title="AWS RDS" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/logos/rds.png" title="AWS RDS" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -111,16 +111,16 @@ we created in part 2 on.
     <strong>Fig. 1 - The ER diagram created in part 1</strong>
 </div>
 
-The above screenshot (Fig. 1) shows the relationships, cardinality, and connectivity between different entities in the database. There are a few entities in Fig. 1 that I did not mention in the project requirements section. <mark>BASE_PIZZA</mark> is meant to hold the crust type, size, price, and cost of all different combinations of those fields. <mark>PIZZA_TOPPINGS, DISCOUNT_PIZZA, and DISCOUNT_ORDER</mark> are bridge entities that combine the primary and foreign keys of the entities.
+The above screenshot (Fig. 1) shows the relationships, cardinality, and connectivity between different entities in the database. <strong>BASE_PIZZA</strong> is meant to hold the crust type, size, price, and cost of all different combinations of those fields. <strong>PIZZA_TOPPINGS, DISCOUNT_PIZZA, and DISCOUNT_ORDER</strong> are bridge entities that combine the primary and foreign keys of the entities.
 
 The different relationship classifications between entities are as follows:
-<h6><strong>One to many</strong></h6>
+<h6><strong>One to many (1:M)</strong></h6>
 This represents two entities where a single occurrence of the first participant can refer to many occurrences of the second.
 
-<h6><strong>Many to many</strong></h6>
+<h6><strong>Many to many (M:M)</strong></h6>
 This represents two entities where many occurrences of the first participant can refer to many different references to the second.
 
-<h6><strong>One to one</strong></h6>
+<h6><strong>One to one (1:1)</strong></h6>
 This represents two entities where a single occurrence of the first participant can only refer to one occurrence of the second. 
 
 <div class="container m-5">

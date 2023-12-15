@@ -22,13 +22,7 @@ toc:
         <div class="caption">
             <strong>Java</strong>
         </div>
-        {% include figure.html path="assets/img/logos/javaLogo.png" title="Java" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <div class="caption">
-            <strong>Java Swing</strong>
-        </div>
-        {% include figure.html path="assets/img/logos/javaswingLogo.png" title="Java Swing" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/logos/javaLogo2.png" title="Java" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 

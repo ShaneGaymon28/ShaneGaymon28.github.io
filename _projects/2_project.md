@@ -22,31 +22,31 @@ toc:
         <div class="caption">
             <strong>ASP.NET MVC</strong>
         </div>
-        {% include figure.html path="assets/img/logos/dotnetLogo.png" title=".NET" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/logos/dotnet.png" title=".NET" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         <div class="caption">
             <strong>MySQL</strong>
         </div>
-        {% include figure.html path="assets/img/logos/mysqlLogo.png" title="MySQL" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/logos/mysql1.png" title="MySQL" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         <div class="caption">
             <strong>C#</strong>
         </div>
-        {% include figure.html path="assets/img/logos/csharpLogo.jpeg" title="C#" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/logos/csharp.png" title="C#" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         <div class="caption">
             <strong>Entity Framework Core</strong>
         </div>
-        {% include figure.html path="assets/img/logos/efcoreLogo.png" title="EF Core" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/logos/efcore.png" title="EF Core" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         <div class="caption">
             <strong>AWS Elastic Beanstalk</strong>
         </div>
-        {% include figure.html path="assets/img/logos/awsbeanstalkLogo.png" title="AWS Elastic Beanstalk" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/logos/beanstalk.png" title="AWS Elastic Beanstalk" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 

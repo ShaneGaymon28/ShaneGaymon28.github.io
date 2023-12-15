@@ -21,19 +21,19 @@ toc:
         <div class="caption">
             <strong>HTML</strong>
         </div>
-        {% include figure.html path="assets/img/logos/htmlLogo.png" title="Java" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/logos/html.png" title="Java" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         <div class="caption">
             <strong>CSS</strong>
         </div>
-        {% include figure.html path="assets/img/logos/cssLogo.png" title="MySQL" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/logos/css.png" title="MySQL" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         <div class="caption">
             <strong>AWS EC2</strong>
         </div>
-        {% include figure.html path="assets/img/logos/ecLogo.png" title="AWS RDS" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/logos/ec2.png" title="AWS RDS" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         <div class="caption">
@@ -45,7 +45,7 @@ toc:
         <div class="caption">
             <strong>NodeJs</strong>
         </div>
-        {% include figure.html path="assets/img/logos/nodeLogo.png" title="AWS RDS" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/logos/node.png" title="AWS RDS" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         <div class="caption">
@@ -57,13 +57,13 @@ toc:
         <div class="caption">
             <strong>Apache</strong>
         </div>
-        {% include figure.html path="assets/img/logos/apacheLogo.jpeg" title="AWS RDS" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/logos/apache.png" title="AWS RDS" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         <div class="caption">
             <strong>React</strong>
         </div>
-        {% include figure.html path="assets/img/logos/reactLogo.png" title="AWS RDS" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/logos/react.png" title="AWS RDS" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 

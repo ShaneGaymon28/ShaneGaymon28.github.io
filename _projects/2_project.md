@@ -201,9 +201,8 @@ The first step to getting this application is to clone the <a href="https://gith
 
 Once you are in the correct directory, you need to add the configuration info for the MySQL database. To do this type the following command:
 
-    ---
-    dotnet user-secrets set "Team22ConnectionString" "Server={host IP address};Port=3306;Database={database name};User Id={user name};Password={password}" 
-    ---
+`dotnet user-secrets set "Team22ConnectionString" "Server={host IP address};Port=3306;Database={database name};User Id={user name};Password={password}"` 
+
 
 where: 
 <ul>
@@ -218,9 +217,7 @@ The reason for this is that we are using .NET's Secret Manager (as opposed to us
 
 You can verify that the settings were updated by typing:
 
-    ---
-    dotnet user-secrets list
-    ---
+`dotnet user-secrets list`
 
 The output should reflect the values you set above.
 

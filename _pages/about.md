@@ -15,7 +15,7 @@ profile:
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hello there, I'm Shane! I'm a recent graduate from Clemson University with a Bachelors of Science in Computer Science with minors in Cybersecurity and Business Administration. 
+Hello there, my name is Shane and I'm a recent graduate from Clemson University with a Bachelors of Science in Computer Science with minors in Cybersecurity and Business Administration. 
 
 In short, I have full-stack web development experience from my undergraduate studies and two summers as a Software Development intern at DataWorks Plus in Greenville, SC. My web development expertise lies mostly in Microsoft's ASP.NET framework with some experience working with NodeJS. The main programming languages in my tech stack are C, C#, JavaScript, Java and HTML/CSS. I've managed everything from front-end web page creation to building custom backend services for the company's needs. 
 

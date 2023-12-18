@@ -21,25 +21,25 @@ toc:
         <div class="caption">
             <strong>Java</strong>
         </div>
-        {% include figure.html path="assets/img/logos/javaLogo2.png" title="Java" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/logos/javaLogo2.png" title="Java" class="img-fluid rounded" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         <div class="caption">
             <strong>MySQL</strong>
         </div>
-        {% include figure.html path="assets/img/logos/mysql1.png" title="MySQL" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/logos/mysql1.png" title="MySQL" class="img-fluid rounded" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         <div class="caption">
             <strong>AWS RDS</strong>
         </div>
-        {% include figure.html path="assets/img/logos/rds.png" title="AWS RDS" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/logos/rds.png" title="AWS RDS" class="img-fluid rounded" %}
     </div>
 </div>
 
 
 
-This project was done as part of my Database Management Systems class at Clemson University. This project included 3 parts:
+This project was done as part of my Database Management Systems class at Clemson University and included 3 parts:
 <ul>
     <li><strong>Part 1 - Database Design</strong></li>
     <li><strong>Part 2 - Database Implementation</strong></li>
@@ -48,15 +48,15 @@ This project was done as part of my Database Management Systems class at Clemson
 
 <h4><strong><u>Project Requirements</u></strong></h4>
 
-The database system I created will be used to track the day-to-day operations of a small pizzeria.
+The database system I created was used to track the day-to-day operations of a small pizzeria. 
 
-The pizzeria's requirements for this system include the following entities:
+The pizzeria's requirements for this system require us to keep track of the following information:
 <h6><strong>Pizzas</strong></h6>
 <ul>
     <li>Crust Type (thin, original, pan, gluten free)</li>
     <li>Size (personal, medium, large, x-large)</li>
-    <li>Price (selling price) and Cost (cost to produce) to the company, determined by size and toppings</li>
-    <li>Can be in 2 states: completed by the kitched or still being processed</li>
+    <li>Price ($ amount to customer) and Cost ($ amount to produce) to the company, determined by size and toppings</li>
+    <li>2 states: completed by the kitched or still being processed</li>
     <li>Toppings on the pizza</li>
 </ul>
 
@@ -72,7 +72,7 @@ The pizzeria's requirements for this system include the following entities:
 
 <h6><strong>Orders</strong></h6>
 <ul>
-    <li>Can be for dine in, pickup, or delivery</li>
+    <li>Order type: dine in, pickup, or delivery</li>
     <li>Total cost to business</li>
     <li>Total price for customer</li>
     <li>Timestamp for when the order was placed</li>
@@ -100,7 +100,7 @@ The pizzeria's requirements for this system include the following entities:
 <h4><strong><u>Part 1 - Database Design</u></strong></h4>
 
 In part 1 of this project we were asked to create an enhanced ER diagram (using an online tool like Lucid Chart) to base the database 
-we created in part 2 on.
+we created in part 2 on. The ER diagram represents the conceptual database as if it were viewed by the end user.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -190,20 +190,129 @@ This represents two entities where a single occurrence of the first participant 
 <h4><strong><u>Part 2 - Database Implementation</u></strong></h4>
 In part 2 of this project, we were asked to create 5 SQL scripts for the database. 
 
-<strong>CreateTables.sql</strong> has the create statements necessary to build the tables for the database. 
+<strong>1. CreateTables.sql</strong> has the create statements necessary to build the tables for the database. 
+The following code snippet is from CreateTables.sql and shows how I created the different tables.
 
-<strong>PopulateData.sql</strong> has the insert statements necessary to populate the database with provided data.   
+{% raw %}
+```sql 
+CREATE SCHEMA IF NOT EXISTS PizzasRUs;
+USE PizzasRUs;
 
-<strong>ViewTables.sql</strong> contains a "SELECT * FROM ..." for each table to display the table data.  
+CREATE TABLE IF NOT EXISTS topping (
+	ToppingID INTEGER NOT NULL PRIMARY KEY UNIQUE AUTO_INCREMENT,
+    ToppingName VARCHAR(255) NOT NULL UNIQUE,
+    ToppingPrice FLOAT NOT NULL,
+    ToppingCost FLOAT NOT NULL,
+    ToppingCurrentInventory INT NOT NULL,
+    ToppingSmall FLOAT NOT NULL,
+    ToppingMedium FLOAT NOT NULL,
+    ToppingLarge FLOAT NOT NULL,
+    ToppingXLarge FLOAT NOT NULL
+);
+```
+{% endraw %}
 
-<strong>DropTables.sql</strong> drops each table in the database.  
+<strong>2. PopulateData.sql</strong> has the insert statements necessary to populate the database with provided data. 
+The data was provided to us with information about the pizza toppings, base pizzas, discounts, and past orders that need to be tracked by the pizzeria.
 
-<strong>CreateViews.sql</strong> creates the following views in the database: 
+The first code snippet shows how the different topping information was added to the database.
+
+{% raw %}
+```sql
+INSERT INTO topping 
+	VALUES 
+		(1, 'Pepperoni', 1.25, 0.2, 100, 2, 2.75, 3.5, 4.5),
+		(2, 'Sausage', 1.25, 0.15, 100, 2.5, 3, 3.5, 4.25),
+		(3, 'Ham', 1.5, 0.15, 78, 2, 2.5, 3.25, 4),
+		(4, 'Chicken', 1.75, 0.25, 56, 1.5, 2, 2.25, 3),
+		(5, 'Green Pepper', 0.5, 0.02, 79, 1, 1.5, 2, 2.5),
+		(6, 'Onion', 0.5, 0.02, 85, 1, 1.5, 2, 2.75),
+		(7, 'Roma Tomato', 0.75, 0.03, 86, 2, 3, 3.5, 4.5),
+		(8, 'Mushrooms', 0.75, 0.1, 52, 1.5, 2, 2.5, 3),
+		(9, 'Black Olives', 0.6, 0.1, 39, 0.75, 1, 1.5, 2),
+		(10, 'Pineapple', 1, 0.25, 15, 1, 1.25, 1.75, 2),
+		(11, 'Jalapenos', 0.5, 0.05, 64, 0.5, 0.75, 1.25, 1.75),
+		(12, 'Banana Peppers', 0.5, 0.05, 36, 0.6, 1, 1.3, 1.75),
+		(13, 'Regular Cheese', 1.5, 0.12, 250, 2, 3.5, 5, 7),
+		(14, 'Four Cheese Blend', 2, 0.15, 150, 2, 3.5, 5, 7),
+		(15, 'Feta Cheese', 2, 0.18, 75, 1.75, 3, 4, 5.5),
+		(16, 'Goat Cheese', 2, 0.2, 54, 1.6, 2.75, 4, 5.5),
+		(17, 'Bacon', 1.5, 0.25, 89, 1, 1.5, 2, 3);
+
+```
+{% endraw %}
+
+This second code snippet shows how a past order was added to the database.
+
+{% raw %}
+```sql
+INSERT INTO orders (OrderCost, OrderPrice, OrderTime, OrderType, OrderIsComplete, OrderCustomerID)
+	VALUES (0, 0, '2023-03-05 12:03:00', 'DINEIN', true, null);
+    
+INSERT INTO dine_in_order VALUES ((SELECT MAX(OrderID) FROM orders), 14);
+
+INSERT INTO pizza (PizzaIsCompleted, PizzaSize, PizzaCrust, PizzaOrderID, PizzaCost, PizzaPrice, PizzaDate)
+	VALUES (1, 'large', 'Thin', (SELECT MAX(OrderID) FROM orders), 3.68, 13.50, '2023-03-05');
+    
+INSERT INTO pizza_toppings 
+	VALUES 
+		((SELECT MAX(PizzaID) FROM pizza), (SELECT ToppingID FROM topping WHERE ToppingName = 'Regular Cheese'), 1),
+		((SELECT MAX(PizzaID) FROM pizza), (SELECT ToppingID FROM topping WHERE ToppingName = 'Pepperoni'), 0),    
+		((SELECT MAX(PizzaID) FROM pizza), (SELECT ToppingID FROM topping WHERE ToppingName = 'Sausage'), 0);
+    
+INSERT INTO discount_pizza 
+	VALUES ((SELECT MAX(PizzaID) FROM pizza), (SELECT DiscountID FROM discount WHERE DiscountID = 'Lunch Special Large'));
+    
+UPDATE orders
+	SET OrderPrice = (SELECT SUM(PizzaPrice) FROM pizza WHERE PizzaOrderID = (SELECT MAX(PizzaOrderID) FROM pizza)),
+		OrderCost = (SELECT SUM(PizzaCost) FROM pizza WHERE PizzaOrderID = (SELECT MAX(PizzaOrderID) FROM pizza))
+	WHERE OrderID = (SELECT MAX(PizzaOrderID) FROM pizza);
+
+```
+{% endraw %}
+
+<strong>3. ViewTables.sql</strong> contains a "SELECT * FROM ..." for each table to display the table data. 
+
+{% raw %}
+```sql
+SELECT * FROM topping;
+
+SELECT * FROM base_price;
+```
+{% endraw %}
+
+<strong>4. DropTables.sql</strong> drops each table in the database.  
+
+{% raw %}
+```sql
+DROP TABLE IF EXISTS topping;
+
+DROP TABLE IF EXISTS base_price;
+```
+{% endraw %}
+
+<strong>5. CreateViews.sql</strong> creates the following views in the database: 
 <ul>
     <li><strong>ToppingPopularity</strong> - rank all toppings from most popular to least popular</li>
     <li><strong>ProfitByPizza</strong> - a summary of the profit by pizza size and crust type from most profitable to least profitable</li>
     <li><strong>ProfitByOrderType</strong> - a summary of the profit for each of the 3 types of orders</li>
 </ul>
+
+The following code snippet shows how the ToppingPopularity view was created 
+
+{% raw %}
+```sql
+CREATE VIEW ToppingPopularity AS
+	SELECT 
+		topping.ToppingName AS Topping, 
+        COUNT(pizza_toppings.ToppingsID) + (SELECT COUNT(IsExtraToppings) FROM pizza_toppings WHERE IsExtraToppings = 1 AND ToppingsID = topping.ToppingID) AS ToppingCount
+    FROM topping, pizza_toppings
+    WHERE topping.ToppingID = pizza_toppings.ToppingsID
+    GROUP BY pizza_toppings.ToppingsID
+    ORDER BY ToppingCount DESC, Topping ASC;
+
+```
+{% endraw %}
 
 
 <h4><strong><u>Part 3 - Adding the Java Application</u></strong></h4>
@@ -225,7 +334,7 @@ Upon running the application, the user is shown a menu with the required feature
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/proj1/menu.png" title="Application Menu" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/proj1/menu.png" title="Application Menu" class="img-fluid rounded z-depth-1 mx-auto d-block" %}
     </div>
 </div>
 <div class="caption">

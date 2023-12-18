@@ -22,31 +22,31 @@ toc:
         <div class="caption">
             <strong>ASP.NET MVC</strong>
         </div>
-        {% include figure.html path="assets/img/logos/dotnet.png" title=".NET" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/logos/dotnet.png" title=".NET" class="img-fluid rounded" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         <div class="caption">
             <strong>MySQL</strong>
         </div>
-        {% include figure.html path="assets/img/logos/mysql1.png" title="MySQL" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/logos/mysql1.png" title="MySQL" class="img-fluid rounded" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         <div class="caption">
             <strong>C#</strong>
         </div>
-        {% include figure.html path="assets/img/logos/csharp.png" title="C#" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/logos/csharp.png" title="C#" class="img-fluid rounded" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         <div class="caption">
             <strong>Entity Framework Core</strong>
         </div>
-        {% include figure.html path="assets/img/logos/efcore.png" title="EF Core" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/logos/efcore.png" title="EF Core" class="img-fluid rounded" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         <div class="caption">
             <strong>AWS Elastic Beanstalk</strong>
         </div>
-        {% include figure.html path="assets/img/logos/beanstalk.png" title="AWS Elastic Beanstalk" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/logos/beanstalk.png" title="AWS Elastic Beanstalk" class="img-fluid rounded" %}
     </div>
 </div>
 
@@ -191,7 +191,7 @@ The first step to getting this application is to clone the <a href="https://gith
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/proj2/listOutput.png" title="LS output" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/proj2/listOutput.png" title="LS output" class="img-fluid rounded z-depth-1 mx-auto d-block" %}
     </div>
 </div>
 <div class="caption">

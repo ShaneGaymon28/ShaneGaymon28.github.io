@@ -13,18 +13,14 @@ toc:
 
 <a href="https://github.com/ShaneGaymon28/sudoku_solver">Link to this Github repository</a>
 
-<div class="container">
-    <div class="row justify-content-center">
-        <h4><strong><u>Technologies</u></strong></h4>
+<div class="row justify-content-center">
+    <h4><strong><u>Technology</u></strong></h4>
+</div>
+<div class="col-sm mt-3 mt-md-0">
+    <div class="caption">
+        <strong>Python</strong>
     </div>
-    <div class="row justify-content-center">
-        <div class="col-sm mt-3 mt-md-0">
-            <div><strong>Python</strong></div>
-            <div class="mt-3">
-                {% include figure.html path="assets/img/logos/python.png" title="Python" class="img-fluid rounded z-depth-1" %}
-            </div>
-        </div>
-    </div>
+    {% include figure.html path="assets/img/logos/python.png" title="Python" class="img-fluid rounded mx-auto d-block" %}
 </div>
 
 This project is a sudoku solver game that was implemented using Python and Pygame.

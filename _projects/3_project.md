@@ -21,49 +21,49 @@ toc:
         <div class="caption">
             <strong>HTML</strong>
         </div>
-        {% include figure.html path="assets/img/logos/html.png" title="Java" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/logos/html.png" title="Java" class="img-fluid rounded" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         <div class="caption">
             <strong>CSS</strong>
         </div>
-        {% include figure.html path="assets/img/logos/css.png" title="MySQL" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/logos/css.png" title="MySQL" class="img-fluid rounded" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         <div class="caption">
             <strong>AWS EC2</strong>
         </div>
-        {% include figure.html path="assets/img/logos/ec2.png" title="AWS RDS" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/logos/ec2.png" title="AWS RDS" class="img-fluid rounded" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         <div class="caption">
             <strong>JavaScript</strong>
         </div>
-        {% include figure.html path="assets/img/logos/jsLogo.png" title="AWS RDS" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/logos/jsLogo.png" title="AWS RDS" class="img-fluid rounded" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         <div class="caption">
             <strong>NodeJs</strong>
         </div>
-        {% include figure.html path="assets/img/logos/node.png" title="AWS RDS" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/logos/node.png" title="AWS RDS" class="img-fluid rounded" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         <div class="caption">
             <strong>Nginx</strong>
         </div>
-        {% include figure.html path="assets/img/logos/nginxLogo.png" title="AWS RDS" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/logos/nginxLogo.png" title="AWS RDS" class="img-fluid rounded" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         <div class="caption">
             <strong>Apache</strong>
         </div>
-        {% include figure.html path="assets/img/logos/apache.png" title="AWS RDS" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/logos/apache.png" title="AWS RDS" class="img-fluid rounded" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         <div class="caption">
             <strong>React</strong>
         </div>
-        {% include figure.html path="assets/img/logos/react.png" title="AWS RDS" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/logos/react.png" title="AWS RDS" class="img-fluid rounded" %}
     </div>
 </div>
 
@@ -76,7 +76,7 @@ The first project was the basic setup of an AWS EC2 instance. I was asked to cre
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/proj3/p1.png" title="Project 1" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/proj3/p1.png" title="Project 1" class="img-fluid rounded z-depth-1 mx-auto d-block" %}
     </div>
 </div>
 <div class="caption">
@@ -98,7 +98,7 @@ Project 2 required us to complete a simple Tic Tac Toe game using HTML, JavaScri
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/proj3/p2.png" title="Project 2" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/proj3/p2.png" title="Project 2" class="img-fluid rounded z-depth-1 mx-auto d-block" %}
     </div>
 </div>
 <div class="caption">

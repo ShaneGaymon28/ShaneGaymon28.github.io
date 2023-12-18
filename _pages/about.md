@@ -21,7 +21,7 @@ In short, I have full-stack web development experience from my undergraduate stu
 
 I'm a lifelong learner (currently working towards a few CompTIA certifications) and love to read, play golf, and enjoy the great outdoors! I'm interested in history and my current favorite book is Gates of Fire by Steven Pressfield, a novel on the Battle of Thermopylae in ancient Greece. My favorite shows include HBO's Game of Thrones / House of the Dragon and the Yellowstone series (1883 and 1923 also)!
 
-You can check out my resume on the tab labeled 'CV'. I've posted my favorite projects (both from school and personal) to the 'projects' tab. You can check out these project on Github by clicking the 'repositories' tab.
+You can check out my resume on the tab labeled `CV`. I've posted my favorite projects (both from school and personal) to the `projects` tab. You can check out these project on Github by clicking the `repositories` tab.
 
 
 Feel free to contact me by email or message me on LinkedIn!
